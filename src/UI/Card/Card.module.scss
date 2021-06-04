@@ -1,0 +1,23 @@
+@import "../../../styles/variables";
+
+.Card {
+  display: inline-block;
+  width: 100%;
+  border-radius: 8px;
+  background-color: $primaryColor;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1.1rem;
+
+  &__heading {
+    display: inline-block;
+  }
+
+  &__span {
+    font-weight: 400;
+  }
+
+  &__section {
+    margin: 0.6rem;
+  }
+}

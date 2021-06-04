@@ -3,10 +3,10 @@
 
 .Header {
   @include pageWrapper;
-  background-color: $tertiaryColor;
+  background-color: $secondaryColor;
   text-align: center;
   padding: 1rem 0;
-  color: $secondaryColor;
+  color: $tertiaryColor;
   font-weight: 700;
   font-size: 1.2rem;
 }
