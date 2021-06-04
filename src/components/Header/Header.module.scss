@@ -1,0 +1,12 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.Header {
+  @include pageWrapper;
+  background-color: $tertiaryColor;
+  text-align: center;
+  padding: 1rem 0;
+  color: $secondaryColor;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
