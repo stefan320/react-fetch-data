@@ -1,6 +1,15 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .UsersList {
   display: flex;
   flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @include respond(tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

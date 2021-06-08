@@ -1,11 +1,12 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .Card {
   display: inline-block;
   width: 100%;
   border-radius: 8px;
   background-color: $primaryColor;
-  margin: 1rem auto;
+  margin: 0.7rem auto;
   padding: 1rem;
   font-size: 1.1rem;
   cursor: pointer;
@@ -20,5 +21,10 @@
 
   &__section {
     margin: 0.6rem;
+  }
+
+  @include respond(tablet) {
+    width: 48.5%;
+    margin: 0.7rem 0;
   }
 }

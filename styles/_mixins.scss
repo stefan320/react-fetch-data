@@ -1,4 +1,16 @@
 @mixin pageWrapper {
   padding-left: 0.6rem;
   padding-right: 0.6rem;
+  @include respond(tablet) {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (min-width: 480px) {
+      @content;
+    }
+  }
 }

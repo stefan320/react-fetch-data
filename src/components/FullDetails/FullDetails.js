@@ -15,10 +15,14 @@ const FullDetails = (props) => {
     console.log(props);
   }, [props.usersData, props.match.params.id, selectedUserId]);
 
+  const closeDetailsHandler = () => {
+    props.history.push("/");
+  };
+
   return (
     <div className={classes.FullDetails}>
       <div className={classes.FullDetails__close}>
-        <p onClick={() => console.log("click")}>&#10006;</p>
+        <p onClick={closeDetailsHandler}>&#10006;</p>
       </div>
       {selectedUserDetails ? (
         <div>
