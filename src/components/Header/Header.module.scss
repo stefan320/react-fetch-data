@@ -3,10 +3,13 @@
 
 .Header {
   @include pageWrapper;
-  background-color: $secondaryColor;
+  background-color: $primaryColor;
   text-align: center;
   padding: 1rem 0;
-  color: $tertiaryColor;
+  color: $quaternaryColor;
   font-weight: 700;
   font-size: 1.2rem;
+  @include respond(tablet) {
+    font-size: 1.6rem;
+  }
 }

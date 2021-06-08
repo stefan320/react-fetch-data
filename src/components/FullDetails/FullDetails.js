@@ -12,7 +12,6 @@ const FullDetails = (props) => {
     setSelectedUserDetails(
       props.usersData.find((user) => user.id === Number(selectedUserId))
     );
-    console.log(props);
   }, [props.usersData, props.match.params.id, selectedUserId]);
 
   const closeDetailsHandler = () => {
@@ -25,7 +24,7 @@ const FullDetails = (props) => {
         <p onClick={closeDetailsHandler}>&#10006;</p>
       </div>
       {selectedUserDetails ? (
-        <div>
+        <div className={classes.FullDetails__container}>
           <div className={classes.FullDetails__section}>
             <h2 className={classes.FullDetails__section__title}>Address</h2>
             <h4 className={classes.FullDetails__section__detail}>

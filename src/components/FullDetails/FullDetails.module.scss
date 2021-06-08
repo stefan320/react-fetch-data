@@ -23,13 +23,21 @@
     }
   }
 
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   &__section {
     text-align: center;
     margin: 1.8rem auto;
 
     &__title {
       margin: 1rem 0;
-      color: $quinaryColor;
+      color: $quaternaryColor;
+      text-decoration: underline;
     }
 
     &__detail {

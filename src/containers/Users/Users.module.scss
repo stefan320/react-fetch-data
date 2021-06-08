@@ -6,4 +6,9 @@
   background-color: $quaternaryColor;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
+
+  @include respond(tablet) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
