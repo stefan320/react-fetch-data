@@ -1,10 +1,39 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .FullDetails {
-  position: absolute;
-  top: 0;
-  left: 0;
+  @include pageWrapper;
+  position: fixed;
+  top: 0%;
+  left: 0%;
   width: 100%;
+  height: 100%;
   background-color: $primaryColor;
   color: $tertiaryColor;
+  padding: 1rem;
+  overflow-y: scroll;
+
+  &__close {
+    color: $secondaryColor;
+    text-align: right;
+    font-size: 1.2rem;
+    & > p {
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
+  &__section {
+    text-align: center;
+    margin: 1.8rem auto;
+
+    &__title {
+      margin: 1rem 0;
+      color: $quinaryColor;
+    }
+
+    &__detail {
+      margin: 0.8rem 0;
+    }
+  }
 }

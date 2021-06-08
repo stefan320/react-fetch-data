@@ -1,7 +1,7 @@
 import Header from "./components/Header/Header";
 import FullDetails from "./components/FullDetails/FullDetails";
 import Users from "./containers/Users/Users";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.scss";
 
 const App = () => {

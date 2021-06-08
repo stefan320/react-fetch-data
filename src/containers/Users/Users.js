@@ -7,8 +7,6 @@ import * as classes from "./Users.module.scss";
 import UsersList from "../../components/UsersList/UsersList";
 
 const Users = (props) => {
-  const { usersData } = props;
-
   useEffect(() => {
     props.loadUsers();
   }, []);
